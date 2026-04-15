@@ -4,6 +4,7 @@
 
   <node pkg="m8_vehicle_interface" exec="m8_vehicle_interface" name="m8_vehicle_interface" output="screen">
     <param name="vehicle_id" value="$(var vehicle_id)"/>
+    <remap from="/m8_vehicle_data" to="/zgw_data_node/zgw_data_pub"/>
   </node>
 
 </launch>
